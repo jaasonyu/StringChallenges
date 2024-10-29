@@ -11,13 +11,22 @@ public class B_HashtagExtractor {
     }
 
     public B_HashtagExtractor() {
-        String post = "I love #coding and #Java!";
+        String post = "I love #coding #and #Java!";
         extractHashtags(post); // Output: Hashtag: #coding, Hashtag: #Java
     }
 
     public void extractHashtags(String post) {
         /* TODO: your code goes here */
+        int x = post.indexOf("#");
+        while(x != -1) {
+            int u = post.indexOf(" ", x);
+            if (x != u){
 
+            }
+            String n = post.substring(x, u);
+            System.out.println(n);
+            x = post.indexOf("#", u);
+        }
     }
 
 }
