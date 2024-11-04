@@ -21,7 +21,7 @@ public class B_HashtagExtractor {
         while(x != -1) {
             int u = post.indexOf(" ", x);
             if (x != u){
-
+               u = post.length();
             }
             String n = post.substring(x, u);
             System.out.println(n);
