@@ -7,21 +7,22 @@
 
 public class A_NameFinder {
 
-    public static void main(String[] args) {
-        A_NameFinder a = new A_NameFinder();
-    }
+public static void main(String[] args) {
+    A_NameFinder a = new A_NameFinder();
+}
 
-    public A_NameFinder() {
-        String email = "kim_possible25@milton.edu";
-        System.out.println("Username: " + findUsername(email)); // Output: Username: kim_possible25
-        email.indexOf('@');
-    }
+public A_NameFinder() {
+    String email = "kim_possible25@milton.edu";
+    System.out.println("Username: " + findUsername(email)); // Output: Username: kim_possible25
+}
 
-    public String findUsername(String email) {
-        /* TODO: your code goes here */
+public String findUsername(String email) {
+    /* TODO: your code goes here */
+    int digits = email.indexOf("@", 0);
+    String Email = email.substring(0, digits);
 
+    return Email;
 
-        return ""; // this is a temporary return to avoid errors
-    }
+}
 
 }
